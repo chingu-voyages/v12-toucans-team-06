@@ -18,12 +18,81 @@ body {
 
 @font-face {
     font-family: 'questrialregular';
-    src: url('css/fonts/questrial-regular-webfont.woff2') format('woff2'),
-         url('css/fonts/questrial-regular-webfont.woff') format('woff');
+    src: url('fonts/questrial-regular-webfont.woff2') format('woff2'),
+         url('fonts/questrial-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+.subheadline {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0 0 10px;
+    padding: 100px 0 0;
+}
+.container {
+    padding: 0 1.5rem;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Teams */
+.team-logos {
+    margin: 70px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-logos img {
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-bottom: 60px;
+    vertical-align: middle;
+    transform: translate(0, 50%);
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    margin:auto;
+    margin-right: 0;
+    padding-right: 0;
+    vertical-align: middle;
+    object-fit: contain;
+    
+}
+.media-teams {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+.video-teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}     
+.text-teams {
+    padding: 50px 0;
+    max-width: 40rem;
+    margin: auto;
+    
+}
+.text-teams p {
+    color: #545465;
+    margin: 16px 0;
+}
+.text-headline {
+    font-size: 34px;
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+/* Footer  */
+
 .footer {
     display: grid;
     grid-template-areas: "footer-right" 
@@ -111,6 +180,8 @@ li {
     color: #334ac0;
 }
 
+/* media queries */
+
 @media (min-width: 281px) {
     
     .footer-right {
@@ -168,7 +239,21 @@ li {
         width: 14rem;
         justify-self: center;
     }
+    .text-headline {
+        font-size: 42px;
+    }
 }
+@media (min-width: 830px)  {
+    .team-logos {
+        margin: 7rem auto 6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+}
+
 @media (min-width: 960px) {
     .footer {
         display: grid;
@@ -192,5 +277,28 @@ li {
     .social-icons {
         justify-content: start;
     }
-  
+    .media-teams {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        padding-right: 0;
+    }
+    .video-teams {
+        padding-right: 0;
+    }
+    .text-teams {
+        max-width: 40vw;
+    }
+    
+    .text-teams p {
+        color: #545465;
+        margin: 18px 0;
+        font-size: 18px;
+        line-height: 2;
+    }
+    .text-headline {
+        font-size: 60px;
+        margin: 0 0 10px;
+    }
+
 }
