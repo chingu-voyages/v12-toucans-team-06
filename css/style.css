@@ -353,6 +353,11 @@ li {
     color: #334ac0;
 }
 
+#footer {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 /* media queries */
 
 @media screen and (min-width: 281px) {
@@ -440,6 +445,8 @@ li {
         grid-template-columns: 2fr 3fr;
         text-align: left;  
         align-self: start; 
+        padding-left: 250px;
+        padding-right: 250px;
     }
     .footer-left {
         grid-column: 1/2;
