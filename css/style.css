@@ -526,8 +526,25 @@ li {
         /* ??????????? */
     }
    
-   
-    
-    
-    
+}
+
+div.deck-title {
+    padding-top: 150px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.deck-paragraph {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 465px;
+    margin: 0 auto;
+}
+
+.deck {
+    background-color: #F6F6F6;
+}
+
+.deck-image {
+    width: auto;
 }
