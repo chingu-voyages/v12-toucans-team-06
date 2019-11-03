@@ -14,6 +14,7 @@ body {
     line-height: 2;
     text-align: center;
     font-size: 1.25rem;
+    letter-spacing: 0.02rem;
 }
 
 @font-face {
@@ -22,6 +23,27 @@ body {
          url('fonts/questrial-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+h2, h4 {
+    display: inline-block;
+    margin: 0 0 10px;
+    line-height: 1.25;
+    /* font-family: Mark, sans-serif; */
+}
+h2 {
+    font-size: 34px;
+}
+h4 {
+    font-size: 18px;
+}
+p {
+    word-break: break-word;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-size: 1rem;
 }
 .subheadline {
     font-size: 18px;
@@ -85,12 +107,164 @@ video {
 .text-teams p {
     color: #545465;
     margin: 16px 0;
+    align-items: center;
 }
-.text-headline {
-    font-size: 34px;
-    margin: 0 0 10px;
-    line-height: 1.5;
+/* NEWS */
+.news-cards {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 4em 0;
+   
 }
+.col {
+    flex: 1;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 0.8em;
+    
+}
+.card-left {
+    border: 1px solid #dddfe5;
+    box-shadow: 0 0 0 1px #dddfe5;
+    overflow: hidden;  
+}
+.card-left a {
+    color:#4966f7;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 1.2em 0 0;
+}
+.card-left img {
+    display: block;
+    background: cover;
+    max-height: 250px;
+    margin: 1em auto;
+}  
+.card-right {
+    background: linear-gradient(91.14deg,#4966f7 0,#8253ff 122.55%);
+    color: #ffffff;
+    font-size: 1.125em;
+    
+}
+.card-right p {
+    margin: 1.125em 0;
+}
+.card-right h2 {
+    padding: 0 0 1.25em;
+}
+.card-right a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 1.2em 0 0;
+
+}
+/* TESTIMONIALS SECTION */
+.testimonials  p{
+    text-align: left;
+}
+.testimonials h4, p {
+    margin: 0;
+}
+.heading {
+    margin: 0 0 60px;
+}
+.columns {
+    padding-bottom: 8rem;
+    overflow: hidden;
+}
+.column-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 6px;
+    margin: 0 0 4rem;
+    border: 1px solid #dddfe5;
+    box-shadow: 0 0 0 1px #dddfe5;
+    overflow: hidden;
+    
+}
+.column-card-top {
+    flex: 1;
+}
+p.light {
+    color: #939da8;
+    text-align: center; 
+}
+.testimonial-avatar {
+    max-width: 60px;
+    vertical-align: middle;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    align-self: center;
+}
+
+/* Sign up form */
+.text {
+    padding: 80px 0;
+    
+}
+.blue-negative {
+    background: #586ee0;
+    line-height: 1.25;
+    padding: 0 15px;
+    
+}
+
+.blue-negative h2 {
+    color: #FFFFFF;
+}
+.blue-negative p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
+.signup-bottom {
+    margin: 40px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 15px;
+}
+input[type=email]{
+    padding: .75rem 1rem .7rem;
+    line-height: normal;
+    border: 1px solid rgba(255, 255, 255, 0.8);    
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+    font-size: 1rem;
+    overflow: visible;
+}
+input[type=email]::placeholder {
+    color: #FFFFFF;
+}
+button.btn-signup {
+    font-size: 1rem;
+    color: #334ac0;
+    line-height: 1;
+    padding: .75rem 2rem .7rem;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+    outline: 0;
+    margin: 0 0 0 -4px;
+    border-radius: 0 6px 6px 0;
+    font-family: 'questrialregular', sans-serif;
+}
+.legal-note {
+    display: inline-block;
+    margin: 10px 0 0;
+    
+}
+
 /* Footer  */
 
 .footer {
@@ -140,21 +314,20 @@ h5 {
     font-size: 15px;
     text-align: center;
 }
-a, p {
+a {
     display: inline-block;
     font-size: 16px;
     color: #2b2a35;
     padding: 2.35px 0;
 }
-p {
-    margin: 16px 0;
-}
+
 a {
     text-decoration: none;
     
 }
 li {
     list-style: none;
+    font-size: 16px;
 }
 .logo {
     margin-top: 0 0 10px;;
@@ -182,7 +355,7 @@ li {
 
 /* media queries */
 
-@media (min-width: 281px) {
+@media screen and (min-width: 281px) {
     
     .footer-right {
         grid-area: footer-right;
@@ -206,10 +379,8 @@ li {
         grid-area: fourth-column;
         grid-column: 1 / 3;
         width: 14rem;
-        
         justify-self: center;
-    }
-   
+    }   
 }
 @media (min-width: 530px) {
     .footer {
@@ -239,9 +410,10 @@ li {
         width: 14rem;
         justify-self: center;
     }
-    .text-headline {
+    h2 {
         font-size: 42px;
     }
+
 }
 @media (min-width: 830px)  {
     .team-logos {
@@ -251,7 +423,14 @@ li {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    
+}
+@media (min-width: 640px) {
+    .testimonials p {
+        font-size: 18px;
+    }
+    .testimonials h4 {
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 960px) {
@@ -296,9 +475,52 @@ li {
         font-size: 18px;
         line-height: 2;
     }
-    .text-headline {
+    h2 {
         font-size: 60px;
         margin: 0 0 10px;
     }
-
+    .text {
+        display: flex;
+        flex-direction: column;
+        max-width: 44vw;
+        margin: 0 auto;
+       
+    }
+    .columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 1;
+        
+    }
+    .column-card{
+        margin: 36px;
+        flex: 1;
+        align-items: bottom;
+    }
+    .news-cards {
+        display: flex;
+        flex-direction: row;
+        padding: 10em 0;
+        
+    }
+    .col {
+        display: flex;
+        flex-direction: column;      
+        justify-content: space-between;
+        
+    }    
+    .card-right h2 {
+        padding: 0 0 1.25em;
+        margin: 0 2em 0 0;
+    }
+    .card-right a {
+        align-self: flex-end; 
+        /* ??????????? */
+    }
+   
+   
+    
+    
+    
 }
