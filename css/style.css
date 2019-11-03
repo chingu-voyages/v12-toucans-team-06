@@ -353,10 +353,7 @@ li {
     color: #334ac0;
 }
 
-#footer {
-    margin-left: 50px;
-    margin-right: 50px;
-}
+
 
 /* media queries */
 
@@ -445,8 +442,7 @@ li {
         grid-template-columns: 2fr 3fr;
         text-align: left;  
         align-self: start; 
-        padding-left: 250px;
-        padding-right: 250px;
+        
     }
     .footer-left {
         grid-column: 1/2;
@@ -526,6 +522,14 @@ li {
         /* ??????????? */
     }
    
+}
+@media (min-width: 1024px) {
+    .footer {
+        margin-left:5rem;
+        margin-right: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 div.deck-title {
