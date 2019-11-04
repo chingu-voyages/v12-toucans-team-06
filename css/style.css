@@ -552,3 +552,62 @@ div.deck-title {
 .deck-image {
     width: auto;
 }
+
+
+
+.fingers {
+    display: flex;
+}
+
+.fingers-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.fingers-title-text {
+    padding-top: 150px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.fingers-first-paragraph {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 465px;
+    margin: 0 auto;
+}
+
+.fingers-second-paragraph {
+    width: 465px;
+    margin: 0 auto;
+}
+
+
+
+.connected {
+    display: flex;
+    background-color: #F6F6F6;
+}
+
+.connected-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.connected-content-title {
+    padding-top: 150px;
+    padding-left: 180px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.connected-content-paragraph {
+    padding-top: 50px;
+    padding-left: 180px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.connected-image {
+
+}
