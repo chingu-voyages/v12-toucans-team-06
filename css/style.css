@@ -528,6 +528,8 @@ li {
    
 }
 
+/* DECK */
+
 div.deck-title {
     padding-top: 150px;
     width: 550px;
@@ -546,10 +548,10 @@ div.deck-title {
 }
 
 .deck-image {
-    width: auto;
+    width: 100%;
 }
 
-
+/* FINGERS */
 
 .fingers {
     display: flex;
@@ -578,7 +580,11 @@ div.deck-title {
     margin: 0 auto;
 }
 
+.fingers-image {
+    
+}
 
+/* CONNECTED */
 
 .connected {
     display: flex;
@@ -606,4 +612,27 @@ div.deck-title {
 
 .connected-image {
 
+}
+
+/* IDEAS */
+
+div.ideas-title {
+    padding-top: 150px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.ideas-paragraph {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 465px;
+    margin: 0 auto;
+}
+
+.ideas {
+    background-color: #FFFFFF;
+}
+
+.ideas-image {
+    width: 100%;
 }
