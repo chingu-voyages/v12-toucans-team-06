@@ -13,9 +13,29 @@
 </head>
 
 <body>
-    <nav></nav>
     <main>
-        <header></header>
+        <!-- NAVIGATION -->
+            <header class="header">
+                <nav class="nav--left">
+                  <ul>
+                    <li><a href="#" class="main-logo">Pitch</a></li>
+                  </ul>
+                </nav>
+
+                <nav class="nav--left">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">Jobs</a></li>
+                    </ul>
+                  </nav>    
+                
+                <nav class="nav--right">
+                  <button class="btn-access">Get early access</button>
+                </nav>
+              </header>
+              
 
         <!-- WORKFLOW -->
         <section class="home-teams">
@@ -259,6 +279,21 @@
         </div>
 
     </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
 
 </body>
 
