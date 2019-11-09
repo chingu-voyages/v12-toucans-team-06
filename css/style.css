@@ -717,6 +717,29 @@ li {
    
 }
 
+/* HOME */
+
+div.home-title {
+    padding-top: 150px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.home-paragraph {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 465px;
+    margin: 0 auto;
+}
+
+.home {
+    background-color: #FFF;
+}
+
+.home-image {
+    width: 100%;
+}
+
 /* DECK */
 
 div.deck-title {
