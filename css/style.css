@@ -740,6 +740,15 @@ div.home-title {
     width: 100%;
 }
 
+h2.home-title-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-home-signup {
+    background-color: #334AC0;
+}
+
 /* DECK */
 
 div.deck-title {
@@ -874,7 +883,6 @@ div.ideas-title {
     .connected{
         display: flex;
         flex-direction: column;
-        /* text-align: left; */
         padding-right: 0;
     }
 
@@ -900,4 +908,20 @@ div.ideas-title {
         margin: 0 auto;
     }
 
+    btn-home-signup {
+        font-size: 1rem;
+        color: #fff;
+        line-height: 1;
+        padding: .75rem 2rem .7rem;
+        border: none;
+        font-weight: 800;
+        cursor: pointer;
+        text-align: center;
+        background-color: #334ac0;
+        outline: 0;
+        margin: 0 0 0 -4px;
+        border-radius: 0 6px 6px 0;
+        font-family: 'questrialregular', sans-serif;
+    }
+    
 }
