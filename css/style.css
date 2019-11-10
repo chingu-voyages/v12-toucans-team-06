@@ -15,7 +15,10 @@ body {
     text-align: center;
     font-size: 1.25rem;
     letter-spacing: 0.02rem;
+    display: grid;
+   
 }
+
 @font-face {
     font-family: 'questrialregular';
     src: url('fonts/questrial-regular-webfont.woff2') format('woff2'),
@@ -66,9 +69,6 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: .7em 0;
-    z-index: 999;
-    transition: padding 0.8s ease-in-out;
     height: 80px;
     background-color: #fff;
 }
@@ -111,8 +111,6 @@ nav {
     text-decoration: none;
     color:  #2b2a35;
     margin: 0 10px;
-   
-   
 }
 span {
     color: #334ac0;
@@ -122,34 +120,26 @@ span {
 .btn-home-signup {
     background-color: #334AC0;
 }
-
+.main {
+    margin: 3rem auto;
+}
 /* HOME */
-.hero {
-    margin-top: 4rem;
-}
-div.home-title {
-    padding-top: 150px;
-    width: 550px;
+.hero-home {
+    padding-top: 10rem;
+    justify-content: center;
     margin: 0 auto;
-}
 
-.home-paragraph {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    margin: 0 auto;
 }
-
-.home {
-    background-color: #FFF;
+.hero-home h1 {
+    font-size: 3rem;
+    line-height: 1;
+    color: #334AC0;
+    display: inline-block;
+    
 }
-
-.home-image {
-    width: 100%;
-}
-
-h2.home-title-text {
-    font-size: 24px;
-    font-weight: bold;
+.home-title h2 {
+    display: inline-block;
+    font-size: 2rem;
 }
 
 /* Teams */
@@ -700,6 +690,13 @@ li {
     .testimonials h4 {
         font-size: 24px;
     }
+    .hero-home h1 {
+        font-size: 4rem;
+    }
+    .home-title {
+        width: 66vw;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 960px) {
@@ -718,6 +715,9 @@ li {
     }
     .footer-right {
         grid-column: 2/3;
+    }
+    .hero-home h1 {
+        font-size: 6rem;
     }
     h5 {
         font-size: 18px;
