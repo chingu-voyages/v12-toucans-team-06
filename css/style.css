@@ -238,10 +238,10 @@ h2.home-title-text {
 
 .connected-bottom {
     background-color: #F6F6F6;
-    max-width: 100%;
+    width: 90%;
 }
 .connected-bottom img {
-    max-width: 100%;
+    width: 90%;
     padding-top: 2rem;
 }
 .connected-content {
@@ -250,22 +250,25 @@ h2.home-title-text {
 }
 
 
+/* DECK */
+.draft-deck {
+    margin: 3rem auto;
+    
+}
 
+.deck-paragraph {
+    padding: 4rem 0;    
+    margin: 0 2rem;
+}
 
-
-@media  (min-width: 960px) {
-/*
-    .deck-title-text {
-        font-size: 28px;
-    }
-    .ideas-image {
-        width: 17%;
-        padding: 2rem 5rem;
-    } */
-
-
-
-  
+.deck {
+    background-color: #F6F6F6;
+}
+.deck img {
+    width: 100vw;
+    
+}
+ 
 /* Road Map*/
 
 .ideas-title {
@@ -593,7 +596,6 @@ li {
     margin-top: 0.7rem;
 }
 
-/* Navigation button */
  .btn-access {
     opacity: 1;
     display: inline-block;
@@ -641,10 +643,9 @@ li {
     h2 {
         font-size: 42px;
     }
-    .connected img, .fingers img {
-        width: 50vw;
-        padding: 2rem 5rem;
-    }
+   .connected-bottom img {
+       width: 70%;
+   }
 
 }
 @media (min-width: 830px)  {
@@ -677,13 +678,13 @@ li {
 
    }
    .connected-content-title {
-       padding-right: 3rem;
-   }
-    .connected-image {
-        width: 138%;
-    }
+       padding-right: 3rem;  }
+       .deck-title, .deck-paragraph, .ideas-title, .ideas-paragraph {
+           width: 60vw;
+           margin: 0 auto;
+           text-align: center;
+       }
 
-    
 }
 @media (min-width: 640px) {
     .testimonials p {
@@ -790,7 +791,7 @@ li {
     }
     .card-right a {
         align-self: flex-end; 
-        /* ??????????? */
+       
     }
    
 }
@@ -801,34 +802,17 @@ li {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .deck-title, .deck-paragraph, .ideas-title, .ideas-paragraph {
+        width: 44vw;
+    }
+    .deck img {
+        width: 100vw;
+    }
+    .ideas img {
+        width: 90vw;
+    }
 }
-
-/* DECK */
-
-div.deck-title {
-    padding-top: 150px;
-    width: 550px;
-    margin: 0 auto;
-}
-
-.deck-paragraph {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 465px;
-    margin: 0 auto;
-}
-
-.deck {
-    background-color: #F6F6F6;
-}
-
-.deck-image {
-    width: 100vw;
-}
-
-
-
-    btn-home-signup {
+btn-home-signup {
         font-size: 1rem;
         color: #fff;
         line-height: 1;
@@ -844,4 +828,4 @@ div.deck-title {
         font-family: 'questrialregular', sans-serif;
     }
     
-}
+
