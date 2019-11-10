@@ -659,6 +659,10 @@ li {
         justify-content: space-around;
         flex-wrap: wrap;
     }
+    .video-teams img {
+        margin: 2rem;
+        padding-right: 2rem;
+    }
     .fingers {
         display: flex;
         flex-direction: row-reverse;
