@@ -96,7 +96,10 @@ nav {
     font-size: 30px;
     font-weight: bold;
     margin-left: 2rem;
-   
+}
+.main-logo li a {
+    list-style: none;
+    text-decoration: none;
 }
 .btn-access {
     opacity: 0;
@@ -199,7 +202,71 @@ h2.home-title-text {
     margin: 16px 0;
     align-items: center;
 }
-/* IDEAS */
+
+/* CONNECTED */
+
+.connected {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    max-width: 100vw;
+    }
+.connected-bottom, .fingers {
+    justify-content: center;
+    margin: 0 auto;
+}
+/* FINGERS */
+
+.fingers {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 2rem;
+}
+.fingers img {
+    max-width: 100%;
+    padding: 2rem 0;
+}
+
+.fingers-content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.connected-bottom {
+    background-color: #F6F6F6;
+    max-width: 100%;
+}
+.connected-bottom img {
+    max-width: 100%;
+    padding-top: 2rem;
+}
+.connected-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+@media  (min-width: 960px) {
+/*
+    .deck-title-text {
+        font-size: 28px;
+    }
+    .ideas-image {
+        width: 17%;
+        padding: 2rem 5rem;
+    } */
+
+
+
+  
+/* Road Map*/
 
 .ideas-title {
     padding-top: 9rem;
@@ -574,6 +641,10 @@ li {
     h2 {
         font-size: 42px;
     }
+    .connected img, .fingers img {
+        width: 50vw;
+        padding: 2rem 5rem;
+    }
 
 }
 @media (min-width: 830px)  {
@@ -584,6 +655,35 @@ li {
         justify-content: space-around;
         flex-wrap: wrap;
     }
+    .fingers {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .fingers-content {
+        text-align: justify;
+        padding-left: 4rem;
+        max-width: 60vw;
+    }
+    .connected-bottom {
+        display: flex;
+        flex-direction: row;
+        
+    }
+   .connected-content {
+       text-align: justify;
+       padding-right: 2rem;
+       margin-right: 2rem;
+
+   }
+   .connected-content-title {
+       padding-right: 3rem;
+   }
+    .connected-image {
+        width: 138%;
+    }
+
+    
 }
 @media (min-width: 640px) {
     .testimonials p {
@@ -726,121 +826,7 @@ div.deck-title {
     width: 100vw;
 }
 
-/* FINGERS */
 
-.fingers {
-    display: flex;
-}
-
-.fingers-content{
-    display: flex;
-    flex-direction: column;
-}
-
-.fingers-title-text {
-    padding-top: 150px;
-    width: 550px;
-    margin: 0 auto;
-}
-
-.fingers-first-paragraph {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 465px;
-    margin: 0 auto;
-}
-
-.fingers-second-paragraph {
-    width: 465px;
-    margin: 0 auto;
-}
-
-
-/* CONNECTED */
-
-.connected {
-    display: flex;
-    background-color: #F6F6F6;
-}
-
-.connected-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.connected-content-title {
-    padding-top: 150px;
-    padding-left: 180px;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.connected-content-paragraph {
-    padding-top: 50px;
-    padding-left: 180px;
-    width: 50%;
-    margin: 0 auto;
-}
-
-
-
-
-@media  (max-width: 960px) {
-
-    .deck-title-text {
-        font-size: 28px;
-    }
-    .ideas-image {
-        width: 17%;
-        padding: 2rem 5rem;
-    }
-
-    /* FINGERS ON MOBILE */
-
-    .fingers{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding-right: 0;
-    }
-
-    .fingers-snap {
-        width: 45%;
-    }
-
-    .fingers-image {
-        width: 150%;
-    }
-
-    /* CONNECTED ON MOBILE */
-
-    .connected{
-        display: flex;
-        flex-direction: column;
-        padding-right: 0;
-    }
-
-    .connected-snap {
-        width: 45%;
-    }
-
-    .connected-image {
-        width: 138%;
-    }
-
-    .connected-content-title {
-        padding-top: 150px;
-        padding-left: 0px;
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    .connected-content-paragraph {
-        padding-top: 50px;
-        padding-left: 0px;
-        width: 50%;
-        margin: 0 auto;
-    }
 
     btn-home-signup {
         font-size: 1rem;
