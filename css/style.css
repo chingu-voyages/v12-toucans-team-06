@@ -797,10 +797,10 @@ li {
 }
 @media (min-width: 1024px) {
     .footer {
-        margin-left:5rem;
-        margin-right: 5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        width: 100vw;
+        
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .deck-title, .deck-paragraph, .ideas-title, .ideas-paragraph {
         width: 44vw;
